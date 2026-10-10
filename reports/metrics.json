@@ -1,0 +1,307 @@
+{
+  "dataset": {
+    "source": "Prady06/customer-support-tickets",
+    "description": "Public synthetic IT ticket dataset described by the Hugging Face dataset card.",
+    "rows_after_cleaning": 40280,
+    "features": [
+      "subject + body"
+    ],
+    "excluded_fields": [
+      "answer",
+      "resolution",
+      "assigned team",
+      "post-resolution fields"
+    ],
+    "split": "80% train / 20% test, random_state=42, stratified by target"
+  },
+  "targets": {
+    "category": {
+      "selected_model": "linear_svc",
+      "candidates": {
+        "logistic_regression": {
+          "accuracy": 0.8222442899702085,
+          "macro_f1": 0.836477799707779,
+          "weighted_f1": 0.8246573372358875,
+          "precision": 0.8298954567494263,
+          "recall": 0.8222442899702085
+        },
+        "linear_svc": {
+          "accuracy": 0.8494289970208541,
+          "macro_f1": 0.849980980042019,
+          "weighted_f1": 0.8444929197979278,
+          "precision": 0.8454980338118652,
+          "recall": 0.8494289970208541
+        }
+      },
+      "test_metrics": {
+        "accuracy": 0.8494289970208541,
+        "macro_f1": 0.849980980042019,
+        "weighted_f1": 0.8444929197979278,
+        "precision": 0.8454980338118652,
+        "recall": 0.8494289970208541
+      },
+      "test_report": {
+        "Change": {
+          "precision": 0.9811794228356336,
+          "recall": 0.9548229548229549,
+          "f1-score": 0.9678217821782178,
+          "support": 819.0
+        },
+        "Incident": {
+          "precision": 0.7870627429205996,
+          "recall": 0.8777089783281734,
+          "f1-score": 0.8299180327868853,
+          "support": 3230.0
+        },
+        "Problem": {
+          "precision": 0.6990881458966566,
+          "recall": 0.5463182897862233,
+          "f1-score": 0.6133333333333333,
+          "support": 1684.0
+        },
+        "Request": {
+          "precision": 0.9850491243058522,
+          "recall": 0.9926818768833405,
+          "f1-score": 0.9888507718696398,
+          "support": 2323.0
+        },
+        "accuracy": 0.8494289970208541,
+        "macro avg": {
+          "precision": 0.8630948589896855,
+          "recall": 0.8428830249551731,
+          "f1-score": 0.849980980042019,
+          "support": 8056.0
+        },
+        "weighted avg": {
+          "precision": 0.8454980338118652,
+          "recall": 0.8494289970208541,
+          "f1-score": 0.8444929197979278,
+          "support": 8056.0
+        }
+      },
+      "test_rows": 8056,
+      "train_rows": 32224
+    },
+    "priority": {
+      "selected_model": "linear_svc",
+      "candidates": {
+        "logistic_regression": {
+          "accuracy": 0.5716236345580934,
+          "macro_f1": 0.5607522887634434,
+          "weighted_f1": 0.5738892127787385,
+          "precision": 0.5797959871733587,
+          "recall": 0.5716236345580934
+        },
+        "linear_svc": {
+          "accuracy": 0.6066285998013903,
+          "macro_f1": 0.5691608546547937,
+          "weighted_f1": 0.5961759960708737,
+          "precision": 0.6111334988961635,
+          "recall": 0.6066285998013903
+        }
+      },
+      "test_metrics": {
+        "accuracy": 0.6066285998013903,
+        "macro_f1": 0.5691608546547937,
+        "weighted_f1": 0.5961759960708737,
+        "precision": 0.6111334988961635,
+        "recall": 0.6066285998013903
+      },
+      "test_report": {
+        "high": {
+          "precision": 0.6244117647058823,
+          "recall": 0.6756842775302355,
+          "f1-score": 0.6490369917456436,
+          "support": 3142.0
+        },
+        "low": {
+          "precision": 0.6408706166868199,
+          "recall": 0.3225806451612903,
+          "f1-score": 0.4291497975708502,
+          "support": 1643.0
+        },
+        "medium": {
+          "precision": 0.5834421519979107,
+          "recall": 0.6829715683277285,
+          "f1-score": 0.6292957746478873,
+          "support": 3271.0
+        },
+        "accuracy": 0.6066285998013903,
+        "macro avg": {
+          "precision": 0.6162415111302043,
+          "recall": 0.5604121636730848,
+          "f1-score": 0.5691608546547937,
+          "support": 8056.0
+        },
+        "weighted avg": {
+          "precision": 0.6111334988961635,
+          "recall": 0.6066285998013903,
+          "f1-score": 0.5961759960708737,
+          "support": 8056.0
+        }
+      },
+      "test_rows": 8056,
+      "train_rows": 32224
+    },
+    "queue": {
+      "selected_model": "linear_svc",
+      "candidates": {
+        "logistic_regression": {
+          "accuracy": 0.4493545183714002,
+          "macro_f1": 0.43815594030712324,
+          "weighted_f1": 0.4512578576739071,
+          "precision": 0.4683619925361348,
+          "recall": 0.4493545183714002
+        },
+        "linear_svc": {
+          "accuracy": 0.55759682224429,
+          "macro_f1": 0.5385492736013897,
+          "weighted_f1": 0.5493369805921803,
+          "precision": 0.5846041893859807,
+          "recall": 0.55759682224429
+        }
+      },
+      "test_metrics": {
+        "accuracy": 0.55759682224429,
+        "macro_f1": 0.5385492736013897,
+        "weighted_f1": 0.5493369805921803,
+        "precision": 0.5846041893859807,
+        "recall": 0.55759682224429
+      },
+      "test_report": {
+        "Billing and Payments": {
+          "precision": 0.8243243243243243,
+          "recall": 0.7568238213399504,
+          "f1-score": 0.7891332470892626,
+          "support": 806.0
+        },
+        "Customer Service": {
+          "precision": 0.4908296943231441,
+          "recall": 0.45952575633687653,
+          "f1-score": 0.47466216216216217,
+          "support": 1223.0
+        },
+        "General Inquiry": {
+          "precision": 0.96875,
+          "recall": 0.2767857142857143,
+          "f1-score": 0.4305555555555556,
+          "support": 112.0
+        },
+        "Human Resources": {
+          "precision": 0.9324324324324325,
+          "recall": 0.46,
+          "f1-score": 0.6160714285714286,
+          "support": 150.0
+        },
+        "IT Support": {
+          "precision": 0.568760611205433,
+          "recall": 0.3496868475991649,
+          "f1-score": 0.43309631544925664,
+          "support": 958.0
+        },
+        "Product Support": {
+          "precision": 0.48783877692842254,
+          "recall": 0.4727272727272727,
+          "f1-score": 0.4801641586867305,
+          "support": 1485.0
+        },
+        "Returns and Exchanges": {
+          "precision": 0.7790055248618785,
+          "recall": 0.3516209476309227,
+          "f1-score": 0.4845360824742268,
+          "support": 401.0
+        },
+        "Sales and Pre-Sales": {
+          "precision": 0.680672268907563,
+          "recall": 0.32270916334661354,
+          "f1-score": 0.43783783783783786,
+          "support": 251.0
+        },
+        "Service Outages and Maintenance": {
+          "precision": 0.7757009345794392,
+          "recall": 0.5286624203821656,
+          "f1-score": 0.6287878787878788,
+          "support": 314.0
+        },
+        "Technical Support": {
+          "precision": 0.5095089412432586,
+          "recall": 0.7618845500848896,
+          "f1-score": 0.6106480693995577,
+          "support": 2356.0
+        },
+        "accuracy": 0.55759682224429,
+        "macro avg": {
+          "precision": 0.7017823508805895,
+          "recall": 0.47404264937335705,
+          "f1-score": 0.5385492736013897,
+          "support": 8056.0
+        },
+        "weighted avg": {
+          "precision": 0.5846041893859807,
+          "recall": 0.55759682224429,
+          "f1-score": 0.5493369805921803,
+          "support": 8056.0
+        }
+      },
+      "test_rows": 8056,
+      "train_rows": 32224
+    }
+  },
+  "sentiment": {
+    "source": "SetFit/sst2",
+    "description": "Public Stanford Sentiment Treebank-derived dataset accessed through Hugging Face.",
+    "selected_model": "linear_svc",
+    "candidates": {
+      "logistic_regression": {
+        "accuracy": 0.7666184971098265,
+        "macro_f1": 0.7660026748114939,
+        "weighted_f1": 0.7665230880213526,
+        "precision": 0.7665247069752169,
+        "recall": 0.7666184971098265
+      },
+      "linear_svc": {
+        "accuracy": 0.7803468208092486,
+        "macro_f1": 0.7793288646924925,
+        "weighted_f1": 0.7799786239159537,
+        "precision": 0.7805575230513562,
+        "recall": 0.7803468208092486
+      }
+    },
+    "test_metrics": {
+      "accuracy": 0.7803468208092486,
+      "macro_f1": 0.7793288646924925,
+      "weighted_f1": 0.7799786239159537,
+      "precision": 0.7805575230513562,
+      "recall": 0.7803468208092486
+    },
+    "test_report": {
+      "negative": {
+        "precision": 0.785031847133758,
+        "recall": 0.7447129909365559,
+        "f1-score": 0.7643410852713178,
+        "support": 662.0
+      },
+      "positive": {
+        "precision": 0.7764550264550265,
+        "recall": 0.8130193905817175,
+        "f1-score": 0.7943166441136671,
+        "support": 722.0
+      },
+      "accuracy": 0.7803468208092486,
+      "macro avg": {
+        "precision": 0.7807434367943922,
+        "recall": 0.7788661907591367,
+        "f1-score": 0.7793288646924925,
+        "support": 1384.0
+      },
+      "weighted avg": {
+        "precision": 0.7805575230513562,
+        "recall": 0.7803468208092486,
+        "f1-score": 0.7799786239159537,
+        "support": 1384.0
+      }
+    },
+    "test_rows": 1384,
+    "train_rows": 5536
+  }
+}

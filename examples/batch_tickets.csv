@@ -1,0 +1,9 @@
+subject,description
+Schedule a maintenance upgrade,"Please schedule the approved database upgrade for the production environment during the Saturday maintenance window."
+Update notification settings,"We need to change the account notification settings so billing alerts are also sent to our finance team."
+Service outage,"The customer portal is unavailable and returns a 503 error for every user."
+Unauthorized account access,"I noticed an unfamiliar sign-in and think someone accessed my account without permission."
+Repeated application crash,"The desktop application crashes whenever I open the reporting page, even after reinstalling it."
+Data export compatibility,"Can you confirm whether your ticket export integrates with our existing CRM software?"
+Payment charged twice,"I was charged twice for my monthly subscription and need the second payment refunded."
+Feature question,"Can you explain how to export my support tickets as a CSV file?"

@@ -1,0 +1,7 @@
+{
+  "support_dataset": "Prady06/customer-support-tickets",
+  "support_dataset_description": "Public synthetic IT ticket dataset described by its Hugging Face dataset card.",
+  "sentiment_dataset": "SetFit/sst2",
+  "downloaded_support_rows": 61765,
+  "downloaded_sentiment_rows": 6920
+}

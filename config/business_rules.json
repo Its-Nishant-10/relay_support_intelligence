@@ -1,0 +1,35 @@
+{
+  "confidence_threshold": 0.5,
+  "keyword_priority_overrides": [
+    {
+      "keywords": [
+        "payment failed",
+        "payment failure",
+        "charged twice",
+        "refund"
+      ],
+      "priority": "high",
+      "description": "Payment and refund issues are high priority"
+    }
+  ],
+  "category_priority_overrides": [],
+  "keyword_review_overrides": [
+    {
+      "keywords": [
+        "security",
+        "unauthorized",
+        "hacked",
+        "data breach",
+        "account takeover"
+      ],
+      "description": "Security-related tickets require human review"
+    }
+  ],
+  "queue_overrides": [
+    {
+      "category": "billing",
+      "queue": "Billing & Payments",
+      "description": "Billing tickets go to Billing & Payments"
+    }
+  ]
+}

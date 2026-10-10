@@ -1,0 +1,9 @@
+[project]
+name = "relay-support-intelligence"
+version = "1.0.0"
+description = "Human-in-the-loop machine-learning support ticket triage"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
